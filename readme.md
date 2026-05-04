@@ -152,7 +152,7 @@ This is a professional-grade LinkedIn clone that demonstrates modern full-stack 
 3. **Create `.env` file** in the frontend directory
 
    ```env
-   VITE_API_URL=http://localhost:5000
+   VITE_SERVER_URL=http://localhost:5000
    ```
 
 4. **Start the development server**
