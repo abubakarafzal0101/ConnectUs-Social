@@ -12,7 +12,10 @@ import postRouter from "./routes/postRoutes.js";
 // middlewares
 app.use(
   cors({
-    origin: "https://connect-us-social.vercel.app",
+    origin: [
+      "http://localhost:5173",
+      "https://connectus-backend-theta.vercel.app",
+    ],
     credentials: true,
   }),
 );
@@ -21,11 +24,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // database connection
-try {
-  await connectDB();
-} catch (err) {
-  console.error("DB connection failed:", err);
-}
+connectDB();
 
 // routes
 app.get("/", (req, res) => {
