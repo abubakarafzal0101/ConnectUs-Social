@@ -1,6 +1,6 @@
 import cloudinary from "../config/cloudinary.js";
 import PostModel from "../models/postModel.js";
-
+import fs from "fs";
 // create a post
 export const createPost = async (req, res) => {
   try {
@@ -13,6 +13,7 @@ export const createPost = async (req, res) => {
       });
       image = result.secure_url;
 
+      fs.unlinkSync(req.file.path);
       let newPost = await PostModel.create({
         author,
         description,
