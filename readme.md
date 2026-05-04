@@ -406,7 +406,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 ### Frontend (.env)
 
 ```env
-VITE_API_URL=http://localhost:5000
+VITE_SERVER_URL=http://localhost:5000
 ```
 
 ---
@@ -423,7 +423,7 @@ VITE_API_URL=http://localhost:5000
 ### Frontend Deployment (Vercel)
 
 1. Connect frontend folder to Vercel
-2. Set `VITE_API_URL` to production backend URL
+2. Set `VITE_SERVER_URL` to production backend URL
 3. Deploy
 
 ---
