@@ -12,7 +12,7 @@ import postRouter from "./routes/postRoutes.js";
 // middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://connect-us-social.vercel.app",
     credentials: true,
   }),
 );
@@ -21,7 +21,11 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 // database connection
-connectDB();
+try {
+  await connectDB();
+} catch (err) {
+  console.error("DB connection failed:", err);
+}
 
 // routes
 app.get("/", (req, res) => {
