@@ -61,7 +61,6 @@ const AuthContextProvider = ({ children }) => {
       if (response.data.success) {
         toast.success(response.data.message);
         getCurrentUser();
-        getAllPosts();
         navigate("/login");
       }
     } catch (error) {
