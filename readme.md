@@ -538,9 +538,8 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 ## Contact & Support
 
 **Developer:** Abubakar Afzal  
-**Email:** itx.abubakar777@gmail.com  
-**GitHub:** [github.com/abubakarafzal](https://github.com/abubakarafzal)  
-**Instagram:** [@abubakarafzal\_](https://instagram.com/abubakarafzal_)  
+**Email:** abubakarafzal0101@gmail.com  
+**GitHub:** [github.com/abubakarafzal](https://github.com/abubakarafzal0101)  
 **LinkedIn:** [linkedin.com/in/abubakar-afzal-737889407](https://linkedin.com/in/abubakar-afzal-737889407)  
 **Location:** Bahawalnadar, Punjab, Pakistan
 
